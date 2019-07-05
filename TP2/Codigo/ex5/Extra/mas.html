@@ -1,0 +1,78 @@
+<html lang='pt-PT'>
+<body>
+<h1>mas</h1>
+<div id='piechart'></div>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+<script type='text/javascript'>
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+// Draw the chart and set the chart values
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['Prevision', 'Word possibilities'],
+['com', 1]
+,
+
+['em', 2]
+,
+
+['que', 1]
+,
+
+['indesmentível', 1]
+,
+
+['as', 1]
+,
+
+['cabe', 1]
+,
+
+['marcou', 1]
+,
+
+['os', 1]
+,
+
+['toda_a', 1]
+,
+
+['a', 2]
+,
+
+['o', 1]
+,
+
+['deve', 1]
+,
+
+['também', 2]
+,
+
+['não', 1]
+,
+
+['guardem', 1]
+,
+
+['eu', 1]
+,
+
+['uma', 1]
+,
+
+['usar', 2]
+,
+
+['ele', 1]
+]);
+// Optional; add a title and set the width and height of the chart
+var options = {'title':'Palavra seguinte: em', 'width':880, 'height':640};
+// Display the chart inside the <div> element with id='piechart'
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+</body>
+</html>

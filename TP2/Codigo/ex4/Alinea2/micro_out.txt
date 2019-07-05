@@ -1,0 +1,681 @@
+ a bordo                       1
+ a direito                     1
+ a dois passos                 1
+ a exemplo                     1
+ a favor de                    1
+ a ferro e fogo                1
+ a fundo perdido               1
+ a fundo                       1
+ a não ser que                 1
+ a par                         1
+ a prazos                      1
+ a propósito de                1
+ a prumo                       1
+ a tal ponto que               1
+ abriam a boca                 1
+ abrir mão                     1
+ agência de notícias           1
+ agência de viagens            1
+ ainda quando                  1
+ ano civil                     1
+ ano que vem                   1
+ ao acaso                      1
+ ao cabo                       1
+ ao cuidado de                 1
+ ao dispor                     1
+ ao fundo                      1
+ ao invés                      1
+ ao longe                      1
+ ao menos                      1
+ ao natural                    1
+ aos olhos de                  1
+ aos poucos                    1
+ apontar o dedo                1
+ aquando                       1
+ arame farpado                 1
+ armas de fogo                 1
+ assim que                     1
+ até mesmo                     1
+ até que ponto                 1
+ aço inoxidável                1
+ balança comercial             1
+ banco de dados                1
+ barra do tribunal             1
+ batatas fritas                1
+ beco sem saída                1
+ bem feito                     1
+ bode expiatório               1
+ boletim oficial               1
+ braço robótico                1
+ bóia de salvação              1
+ cabeça de série               1
+ cada qual                     1
+ capacetes azuis               1
+ casacos de peles              1
+ católico praticante           1
+ cem por cento                 1
+ classe média                  1
+ com jeito                     1
+ com prazer                    1
+ com respeito                  1
+ como a palma da minha mão     1
+ comércio por grosso           1
+ contos de réis                1
+ cordão umbilical              1
+ corpo docente                 1
+ cultura geral                 1
+ custos de produção            1
+ da parte de                   1
+ da praxe                      1
+ de antemão                    1
+ de bolso                      1
+ de bom grado                  1
+ de campo                      1
+ de caras                      1
+ de certo modo                 1
+ de cima                       1
+ de conta que                  1
+ de efeito                     1
+ de encontro                   1
+ de força                      1
+ de frente                     1
+ de golpe                      1
+ de igual para igual           1
+ de longe                      1
+ de madrugada                  1
+ de mais a mais                1
+ de marca                      1
+ de memória                    1
+ de mistura                    1
+ de modo algum                 1
+ de modo que                   1
+ de outro modo                 1
+ de parte a parte              1
+ de passagem                   1
+ de pernas para o ar           1
+ de plano                      1
+ de preferência                1
+ de quando em vez              1
+ de relance                    1
+ de seguida                    1
+ de tal forma                  1
+ de tal modo que               1
+ de topo                       1
+ de uma assentada              1
+ de vez                        1
+ debaixo de                    1
+ defronte de                   1
+ dentro em breve               1
+ depois de amanhã              1
+ desde então                   1
+ desde já                      1
+ diante                        1
+ dias de semana                1
+ e por aí                      1
+ eis que                       1
+ em atenção a                  1
+ em benefício                  1
+ em bloco                      1
+ em boa medida                 1
+ em cadeia                     1
+ em cheio                      1
+ em claro                      1
+ em consciência                1
+ em criança                    1
+ em código                     1
+ em diante                     1
+ em exercício                  1
+ em face                       1
+ em favor de                   1
+ em forma de                   1
+ em função de                  1
+ em homenagem a                1
+ em lugar                      1
+ em massa                      1
+ em ponto                      1
+ em público                    1
+ em redor                      1
+ em regra                      1
+ em resumo                     1
+ em separado                   1
+ em termos                     1
+ em troca                      1
+ em trânsito                   1
+ em via de                     1
+ em vida                       1
+ em última instância           1
+ emenda constitucional         1
+ ensino primário               1
+ entrada livre                 1
+ entre dois fogos              1
+ estado de emergência          1
+ face                          1
+ festa de arromba              1
+ fiel da balança               1
+ fina flor                     1
+ fins de semana                1
+ fio condutor                  1
+ fio de água                   1
+ fogos postos                  1
+ forças armadas                1
+ glóbulos brancos              1
+ golpe baixo                   1
+ golpe de estado               1
+ graças a deus                 1
+ graças a                      1
+ grupo de pressão              1
+ happy end                     1
+ hoje mesmo                    1
+ hoje à noite                  1
+ homem da rua                  1
+ homem de letras               1
+ horário de trabalho           1
+ ida e volta                   1
+ impostos de circulação        1
+ inimigo figadal               1
+ junta de freguesia            1
+ juntas de freguesia           1
+ junto com                     1
+ lanterna vermelha             1
+ legítima defesa               1
+ lençol freático               1
+ letra morta                   1
+ letras garrafais              1
+ liberdade de expressão        1
+ luva branca                   1
+ luz verde                     1
+ lágrimas de crocodilo         1
+ mais do que                   1
+ mar alto                      1
+ mea culpa                     1
+ meio ambiente                 1
+ metro cúbico                  1
+ metros quadrados              1
+ mil e um                      1
+ modo de vida                  1
+ má vontade                    1
+ nas quais                     1
+ nem mesmo                     1
+ nem que                       1
+ nesta altura                  1
+ no calor                      1
+ no fio                        1
+ no geral                      1
+ novo mundo                    1
+ o inverso                     1
+ o maior número                1
+ o mais possível               1
+ o melhor possível             1
+ o mundo inteiro               1
+ o máximo                      1
+ o todo                        1
+ obra de referência            1
+ olhos nos olhos               1
+ ombro a ombro                 1
+ orçamento do estado           1
+ os demais                     1
+ os últimos anos               1
+ palavras de ordem             1
+ palma da mão                  1
+ pano de fundo                 1
+ para a direita                1
+ para aqui                     1
+ para cima                     1
+ para com                      1
+ para sempre                   1
+ passagem de nível             1
+ pedra de toque                1
+ pelo direito                  1
+ pelo modo                     1
+ pelo qual                     1
+ pequeno almoço                1
+ placas giratórias             1
+ pois que                      1
+ política de austeridade       1
+ pomo de discórdia             1
+ ponto de mira                 1
+ ponto final                   1
+ ponto fraco                   1
+ pontos finais                 1
+ pontos fracos                 1
+ por assim dizer               1
+ por cima de                   1
+ por completo                  1
+ por detrás de                 1
+ por diante                    1
+ por escrito                   1
+ por excelência                1
+ por força de                  1
+ por hora                      1
+ por lapso                     1
+ por maioria                   1
+ por muito que                 1
+ por ocasião                   1
+ por onde                      1
+ por ordem de                  1
+ por parte de                  1
+ por pouco não                 1
+ por querer                    1
+ por quê                       1
+ por sinal                     1
+ por via de                    1
+ por via                       1
+ postos de abastecimento       1
+ pouco e pouco                 1
+ poços de petróleo             1
+ primeiro ministro             1
+ prisão preventiva             1
+ produto nacional bruto        1
+ profissão de fé               1
+ propriamente dito             1
+ príncipe herdeiro             1
+ próximo de                    1
+ qualquer um                   1
+ quanto antes                  1
+ quedas de água                1
+ quem quer que                 1
+ questão de tempo              1
+ rente                         1
+ revolução industrial          1
+ salta ao ouvido               1
+ salto alto                    1
+ salvo seja                    1
+ salário mínimo                1
+ seja quem for                 1
+ sem rebuço                    1
+ ser humano                    1
+ sex appeal                    1
+ sob o signo                   1
+ sob pena de                   1
+ sociedade anónima             1
+ tanto mais                    1
+ taxas de câmbio               1
+ terra de ninguém              1
+ trabalhos forçados            1
+ um a um                       1
+ um lugar ao sol               1
+ uma boa dose                  1
+ vaga de fundo                 1
+ valor patrimonial             1
+ valor real                    1
+ vestido comprido              1
+ via aérea                     1
+ vias férreas                  1
+ virou as costas               1
+ visto com bons olhos          1
+ vêem com bons olhos           1
+ à conta                       1
+ à custa de                    1
+ à esquerda                    1
+ à flor                        1
+ à força de                    1
+ à hora                        1
+ à luz                         1
+ à maneira                     1
+ à margem de                   1
+ à medida que                  1
+ à mercê de                    1
+ à moda                        1
+ à razão de                    1
+ à vista de                    1
+ às boas                       1
+ às costas                     1
+ às quais                      1
+ ângulo recto                  1
+ órgãos de comunicação social  1
+ a granel                      2
+ a menos que                   2
+ a montante                    2
+ a retalho                     2
+ acerca de                     2
+ agente secreto                2
+ ao encontro                   2
+ ao máximo                     2
+ ao pé                         2
+ ao qual                       2
+ ao todo                       2
+ ao vivo                       2
+ aos olhos                     2
+ apesar disso                  2
+ aqui e ali                    2
+ até então                     2
+ cartão amarelo                2
+ com base em                   2
+ com efeito                    2
+ como que                      2
+ construção civil              2
+ de carne e osso               2
+ de comprimento                2
+ de conta                      2
+ de estilo                     2
+ de estimação                  2
+ de fundo                      2
+ de futuro                     2
+ de morte                      2
+ de perto                      2
+ de prata                      2
+ de primeira                   2
+ de quando em quando           2
+ de surpresa                   2
+ de um lado                    2
+ de vez em quando              2
+ de vista                      2
+ e silva                       2
+ em debate                     2
+ em dia                        2
+ em dinheiro                   2
+ em flagrante                  2
+ em obras                      2
+ em português                  2
+ em primeiro lugar             2
+ em prol                       2
+ em suma                       2
+ em tempo de                   2
+ em virtude                    2
+ em vão                        2
+ fita gomada                   2
+ frente a                      2
+ golpe de misericórdia         2
+ guerra civil                  2
+ guerra fria                   2
+ igreja católica               2
+ lei orgânica                  2
+ liberdade de imprensa         2
+ mais nada                     2
+ na frente                     2
+ na ordem do dia               2
+ na presença                   2
+ no meio de                    2
+ no meio                       2
+ no que diz respeito           2
+ nos termos                    2
+ não mais                      2
+ nível de vida                 2
+ o estrangeiro                 2
+ o que quer que                2
+ ontem de manhã                2
+ outra vez                     2
+ pecado original               2
+ pela qual                     2
+ pelo meio                     2
+ pelos vistos                  2
+ por baixo                     2
+ por conta                     2
+ por detrás                    2
+ por entre                     2
+ por trás                      2
+ por unanimidade               2
+ por volta                     2
+ prata da casa                 2
+ quando                        2
+ quanto mais                   2
+ quinze dias                   2
+ relações públicas             2
+ rumo a                        2
+ seja como for                 2
+ seres humanos                 2
+ serviço militar               2
+ sistema solar                 2
+ terra natal                   2
+ toda a vida                   2
+ tudo isto                     2
+ tudo quanto                   2
+ vinho do porto                2
+ à beira de                    2
+ à maneira de                  2
+ à margem                      2
+ à mão                         2
+ à primeira vista              2
+ às tantas                     2
+ água potável                  2
+ águas minerais                2
+ águas residuais               2
+ a cargo de                    3
+ a mais de                     3
+ a menos                       3
+ a título de                   3
+ acerca                        3
+ ainda por cima                3
+ ao lado de                    3
+ ao longo de                   3
+ ao passo que                  3
+ bolsas de estudo              3
+ cada vez que                  3
+ cartões amarelos              3
+ com vista a                   3
+ da qual                       3
+ dar corpo                     3
+ das quais                     3
+ de agora                      3
+ de estudo                     3
+ de noite                      3
+ de peso                       3
+ de qualquer modo              3
+ de repente                    3
+ de rigor                      3
+ de saída                      3
+ denominador comum             3
+ dia a dia                     3
+ do qual                       3
+ dívida pública                3
+ em contrapartida              3
+ em grande parte               3
+ em nome de                    3
+ em princípio                  3
+ em questão                    3
+ em torno de                   3
+ em vias de                    3
+ face a                        3
+ hoje em dia                   3
+ logo que                      3
+ meia hora                     3
+ muitas vezes                  3
+ na frente de                  3
+ na presença de                3
+ nada menos                    3
+ nem por isso                  3
+ no dia anterior               3
+ obras de arte                 3
+ outra coisa                   3
+ palavra de ordem              3
+ para casa                     3
+ para lá                       3
+ por acaso                     3
+ por agora                     3
+ por aqui                      3
+ por isso que                  3
+ por terra                     3
+ preço de venda                3
+ relativamente a               3
+ se calhar                     3
+ seja qual for                 3
+ sociedade civil               3
+ tudo isso                     3
+ uma centena de                3
+ à beira                       3
+ à porta fechada               3
+ à qual                        3
+ às vezes                      3
+ a pé                          4
+ ao contrário de               4
+ ao fim da tarde               4
+ ao que parece                 4
+ atrás                         4
+ campanha eleitoral            4
+ dado que                      4
+ de destaque                   4
+ de espaço                     4
+ de graça                      4
+ de qualquer forma             4
+ de raiz                       4
+ de urgência                   4
+ de volta                      4
+ debaixo                       4
+ desde há                      4
+ dois pontos                   4
+ em cima                       4
+ em comparação                 4
+ em favor                      4
+ em seguida                    4
+ em si                         4
+ fim de semana                 4
+ glóbulos vermelhos            4
+ meia dúzia                    4
+ no caso de                    4
+ no qual                       4
+ o povo                        4
+ por causa de                  4
+ por cima                      4
+ por enquanto                  4
+ por fim                       4
+ próximo                       4
+ quando não                    4
+ raios gama                    4
+ se bem que                    4
+ sempre que                    4
+ tanto mais que                4
+ todo o mundo                  4
+ todos os dias                 4
+ a cargo                       5
+ a favor                       5
+ ainda assim                   5
+ ao ar livre                   5
+ boa vontade                   5
+ da parte                      5
+ de lei                        5
+ de manhã                      5
+ desde logo                    5
+ desta forma                   5
+ em frente                     5
+ em nome                       5
+ em relação a                  5
+ enquanto que                  5
+ entre si                      5
+ logo a seguir                 5
+ menos de                      5
+ mercado de trabalho           5
+ mesmo assim                   5
+ na medida em que              5
+ nem sequer                    5
+ por um lado                   5
+ quer dizer                    5
+ a fim de                      6
+ a propósito                   6
+ a sério                       6
+ abaixo                        6
+ acima                         6
+ com vista                     6
+ de fora                       6
+ de forma a                    6
+ devido a                      6
+ em função                     6
+ em parte                      6
+ em vez                        6
+ frente                        6
+ jogos olímpicos               6
+ muito tempo                   6
+ na qual                       6
+ nessa altura                  6
+ para onde                     6
+ por si                        6
+ referente                     6
+ romance policial              6
+ toda a gente                  6
+ ao lado                       7
+ assim como                    7
+ capital social                7
+ cerca                         7
+ em geral                      7
+ ensino superior               7
+ a tempo                       8
+ além de                       8
+ além disso                    8
+ ao contrário                  8
+ de tratamento                 8
+ em torno                      8
+ opinião pública               8
+ ou seja                       8
+ para já                       8
+ perto de                      8
+ perto                         8
+ por que                       8
+ por vezes                     8
+ acima de                      9
+ em particular                 9
+ em vez de                     9
+ fora de                       9
+ mais ou menos                 9
+ pelo contrário                9
+ por causa                     9
+ postos de trabalho            9
+ uma vez                       9
+ de imediato                   10
+ em breve                      10
+ em termos de                  10
+ mais uma vez                  10
+ o qual                        10
+ os quais                      10
+ quanto a                      10
+ à volta                       10
+ as quais                      11
+ de modo a                     11
+ dos quais                     11
+ por sua vez                   11
+ em conjunto                   12
+ para além de                  12
+ a qual                        13
+ de facto                      13
+ de resto                      13
+ desta vez                     13
+ em curso                      13
+ fora                          13
+ no caso                       13
+ ponto de vista                13
+ por parte                     13
+ ao mesmo tempo                14
+ como se                       14
+ dentro de                     14
+ desde que                     14
+ devido                        14
+ em conta                      14
+ em vigor                      14
+ relativamente                 14
+ além                          15
+ dentro                        15
+ um pouco                      15
+ ainda que                     16
+ dezenas de                    16
+ cada um                       17
+ de novo                       17
+ pela primeira vez             17
+ tudo o que                    17
+ ao longo                      18
+ em relação                    18
+ a partir de                   19
+ para além                     19
+ em casa                       20
+ cada vez mais                 21
+ tal como                      21
+ uma vez que                   22
+ em causa                      23
+ por outro lado                23
+ bem como                      24
+ já não                        27
+ já que                        27
+ apesar                        28
+ a partir                      29
+ de acordo                     32
+ pelo menos                    37
+ por exemplo                   38
+ toda a                        40
+ apesar de                     41
+ mais de                       41
+ todo o                        42
+ o que                         47
+ todas as                      47
+ quanto                        49
+ no entanto                    58
+ todos os                      72
+ do que                        73
+ cerca de                      92
+ por cento                     172

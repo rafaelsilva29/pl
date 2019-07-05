@@ -1,0 +1,4 @@
+FileName: Files/Cetempublico01.txt
+Extratos (<ext>): 5454
+Paragrafos (<p>): 12843
+Frases (<s>): 28863

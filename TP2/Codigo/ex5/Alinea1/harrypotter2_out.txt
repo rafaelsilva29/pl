@@ -1,0 +1,2 @@
+Numero de extratos: 5432
+Nome do ficheiro: Files/harrypotter2

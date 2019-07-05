@@ -1,0 +1,384 @@
+%option noyywrap
+%{
+	#include <string.h>
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <ctype.h>
+    
+    struct Noticia{
+        char *title;
+        char **tags;
+        char *idNoticia;
+        char *date;
+        char **text;
+        int countText;
+        char *category;
+    }noticia;
+
+    typedef struct ltags {
+    	int valor;
+    	char *tag;
+        char **titles;
+        char **idsNews;
+        int numAux;
+    	struct ltags *prox;
+	} *Tags;
+
+	char **idsNoticias;
+    int NumNews = 0;
+
+    FILE *out, *jornal, *tags, *indiceTags;
+
+    Tags listTags;
+    
+    int countTags = 0;
+    int flag  = 0;
+    int aux   = 0;
+
+    void initNoticia(){
+        noticia.title = (char*) calloc(64,sizeof(char*));
+        noticia.idNoticia = (char*) calloc(64,sizeof(char*));
+        noticia.date = (char*) calloc(64,sizeof(char*));
+        noticia.tags = (char**) calloc(64,sizeof(char**));
+        noticia.text = (char**) calloc(1024,sizeof(char**));
+        noticia.category = (char*) calloc(64,sizeof(char*));
+        noticia.countText = 0;
+    }
+
+    void initTags(){
+        listTags = (Tags) malloc(sizeof(struct ltags));
+        listTags->tag = (char*) calloc(64,sizeof(char*));
+        listTags->titles = (char**) calloc(4096,sizeof(char**));
+        listTags->idsNews = (char**) calloc(4096,sizeof(char**));
+        listTags->valor = 0;
+        listTags->numAux = 0;
+        listTags->prox = NULL;
+    }
+
+    int searchNoticia(char *id){
+        if(NumNews==0){
+            idsNoticias[0] = strdup(id);
+            idsNoticias[1] =  NULL;
+            NumNews++;
+            return 0;
+        } else {
+            int i=0;
+            while(idsNoticias[i] != NULL){
+                if(strcmp(idsNoticias[i],id)==0){
+                    return 1;
+                }
+                i++;
+            }
+            idsNoticias[i] = strdup(id);
+            idsNoticias[i+1] = NULL;
+            NumNews++;
+            return 0;
+        }
+    }
+
+    void putListTags(char *tag){
+    	int flag=0;
+    	Tags *aux = &listTags;
+
+    	while((*aux) && !flag){
+    		if(strcmp((*aux)->tag,tag)==0){
+                (*aux)->idsNews[(*aux)->numAux] = strdup(noticia.idNoticia);
+                (*aux)->titles[(*aux)->numAux] = strdup(noticia.title);
+                (*aux)->numAux++;
+    			flag=1;
+    			(*aux)->valor++;
+    		}
+    		aux = &((*aux)->prox);
+    	}
+    	if(flag==0){
+    		 Tags new = (Tags) malloc (sizeof (struct ltags));
+   			 new->valor = 1;
+   			 new->tag = strdup(tag);
+             new->numAux = 0; 
+             new->idsNews = (char**) calloc(4096,sizeof(char**));
+             new->titles = (char**) calloc(4096,sizeof(char**));
+             new->idsNews[new->numAux] = strdup(noticia.idNoticia);
+             new->titles[new->numAux] = strdup(noticia.title);
+             new->numAux++;
+    		 new->prox = *aux;
+    		 *aux = new;
+             countTags++;
+    	}
+    }
+
+    void printIndiceTags(){
+        Tags *aux = &listTags;
+        char *temp;
+        char *file;
+        
+        fprintf(indiceTags,"<p></p>\n");
+        fprintf(indiceTags,"<p>Number of News: %d</p>\n",NumNews);
+
+        while(*aux){
+            fprintf(indiceTags,"<p></p>\n");
+            if((*aux)->valor >0){
+                fprintf(indiceTags,"<b>Tag: %s</b>\n",(*aux)->tag);
+                fprintf(indiceTags,"<p></p>\n");
+                fprintf(indiceTags,"<ul>");
+                for(int i=0; i<(*aux)->numAux; i++){
+                    temp = (char*) malloc(sizeof(char)*64);
+                    file = (char*) malloc(sizeof(char)*64);
+                    strcpy(file,"Noticias/");
+                    sprintf(temp,"%s.html",(*aux)->idsNews[i]);
+                    file = strcat(file,temp);
+                    if(strcmp("",(*aux)->titles[i])==0){
+                       fprintf(indiceTags,"  <li><a href='%s'>%s</a></li>\n",file,"[No Title]");
+                    } else{
+                       fprintf(indiceTags,"  <li><a href='%s'>%s</a></li>\n",file,(*aux)->titles[i]);
+                    }
+                }
+                fprintf(indiceTags,"</ul>");
+            }
+            aux = &((*aux)->prox);
+        }
+    }
+
+    void beginTable(){
+    	fprintf(tags,"<!DOCTYPE html>\n<html>\n<head>\n<meta charset = \"UTF-8\"/>\n<style>\ntable, th, td {\nborder: 1px solid black;\nborder-collapse: collapse;\n}\nth, td {\npadding: 5px;\n}\nth {\ntext-align: left;\n}\n</style>\n</head>\n<body><h2>List of Tags</h2>\n<p>List contain number of occurrences of a tag</p>\n<p>Total tags: %d</p>\n<table style=\"width:%d\">\n<tr>\n<th>Tag Name</th>\n<th>Number of Occurrences</th>\n</tr>",countTags,150);
+    }
+
+    void finishTable(){
+    	fprintf(tags,"</table>\n</body>\n</html>");
+    }
+
+    void htmlInit(FILE* file, char *name){
+        if(strcmp("jornal",name)==0){
+            fprintf(file,"<html>\n<h2>Indice Jornal</h2>\n<head>\n<meta charset = \"UTF-8\"/>\n</head>\n<body>\n<ul>\n");  
+        } else{
+            fprintf(file,"<html>\n<h2>Indice Tags</h2>\n<head>\n<meta charset = \"UTF-8\"/>\n</head>\n<body>\n");
+        }
+    }
+
+    void htmlFinit(FILE* file, char *name){
+        if(strcmp("jornal",name)==0){
+            fprintf(file,"</ul>\n</body>\n</html>");
+        } else{
+            fprintf(file,"</body>\n</html>");
+        }
+    }
+
+    void printTags(){
+     	Tags *aux = &listTags;
+     	beginTable();
+        while(*aux){
+        	if((*aux)->valor >0){
+            	fprintf(tags,"<tr>\n");
+            	fprintf(tags,"<th>%s</th>\n",(*aux)->tag);
+            	fprintf(tags,"<th>%d</th>\n",(*aux)->valor);
+            	fprintf(tags,"</tr>\n");
+        	}
+            aux = &((*aux)->prox);
+        }
+        finishTable();
+    }
+
+    void beginNoticia(){
+        char *temp = (char*) malloc(sizeof(char)*64);
+		char *file = (char*) malloc(sizeof(char)*64);
+        int i=0;
+
+		strcpy(file,"Noticias/");
+
+		sprintf(temp,"%s.html",noticia.idNoticia);
+
+		file = strcat(file,temp);
+
+		fprintf(jornal,"  <li><a href='%s'>%s</a></li>\n", file, noticia.idNoticia);
+
+	    out = fopen(file, "w");
+
+	    if(out != NULL){
+	    	// Init Hmtl
+	    	fprintf(out,"<!DOCTYPE html>\n");
+	    	fprintf(out,"<html>\n");
+	    	fprintf(out,"<head>\n");
+	    	fprintf(out,"<meta charset = \"UTF-8\"/>\n");
+	    	fprintf(out, "<style>\n#title {\ndisplay: inline;\n}\n</style>\n");
+	    	fprintf(out,"</head>\n<body>\n");
+
+	    	// Init Noticia
+	    	fprintf(out,"	<pub id=\"%s\">\n", noticia.idNoticia);
+	    	fprintf(out,"		<b>Title:</b>\n");
+            if(strcmp("",noticia.title)==0){
+                fprintf(out,"           <title id=\"title\">%s</title>\n","[No Title]");
+            } else{
+                fprintf(out,"           <title id=\"title\">%s</title>\n", noticia.title);
+            }
+            fprintf(out,"		<p></p>\n");
+            fprintf(out,"		<b>Date:</b>\n");
+            if(strcmp("",noticia.date)==0){
+                fprintf(out,"          <author_date>%s</author_date>\n","[No Date]");   
+            } else{
+                fprintf(out,"          <author_date>%s</author_date>\n", noticia.date);   
+            }
+            fprintf(out,"		<p></p>\n");
+            fprintf(out,"		<b>Tags:</b>\n");
+            fprintf(out, "			<tags>\n");
+            while(noticia.tags[i] != NULL){
+            	if(i==0){
+            		fprintf(out,"				<tag>%s</tag> ",noticia.tags[i]); 
+            	} else{
+                 	fprintf(out,"<tag> || %s</tag> ",noticia.tags[i]);
+            	}
+                i++;
+            }
+            fprintf(out,"\n");
+            fprintf(out,"			</tags>\n");
+            fprintf(out,"		<p></p>\n");
+            fprintf(out,"		<b>Category:</b>\n");
+            if(strcmp("",noticia.category)==0){
+                fprintf(out,"           <category>%s</category>\n","[No Category]"); 
+            } else{
+                fprintf(out,"           <category>%s</category>\n",noticia.category); 
+            }
+            fprintf(out,"		<p></p>\n");
+            fprintf(out,"		<text>\n");
+            for(int j=0; j<noticia.countText; j++){
+                if(noticia.text[j]!=NULL){
+                    fprintf(out,"           %s\n",noticia.text[j]);
+                }
+            }
+            fprintf(out,"		</text>\n");
+            fprintf(out,"	</pub>\n");
+            fprintf(out, "</body>\n</html>\n");
+	    } 
+
+        fclose(out);
+    }
+
+    void rmSubstr(char *str, const char *toRemove){
+        size_t length = strlen(toRemove);
+        while((str = strstr(str,toRemove))){
+            memmove(str, str + length, 1 + strlen(str + length));
+        }
+    }
+
+    char* trim(char *s) {
+        while(isspace(*s)) s++;
+        char *back = s + strlen(s);
+        while(isspace(*--back));
+        *(back+1) = '\0';
+        return s;
+    }
+
+%}
+
+%x NOTICIA IGNORE
+
+%%
+
+<*>\<pub\> { initNoticia(); BEGIN IGNORE; BEGIN NOTICIA; }
+
+<IGNORE>{
+
+	<*>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━.* {;}
+
+	<*>\<!--.* {;}
+
+	<*>Etiquetas:.* {;}
+
+	<*>PARTILHE.* {;}
+}
+
+<NOTICIA>\<\/pub\> { 
+                        if(!searchNoticia(noticia.idNoticia) && noticia.idNoticia[0]=='p'){
+                            int i=0;
+                            while(noticia.tags[i]!=NULL){
+                                putListTags(noticia.tags[i]);
+                                i++;
+                            }
+                            beginNoticia();
+                        }
+                   }
+
+<NOTICIA>{
+  
+  	<*>#TAG:.*       { 
+                       char *input = strdup(yytext+6); 
+                       rmSubstr(input,"{"); 
+                       rmSubstr(input,"}");  
+                       rmSubstr(input,"tag");  
+                       char *token = strtok(input,":");
+                       int i = 0;
+                       while(token != NULL){
+                            trim(token);
+                            noticia.tags[i] = strdup(token);
+                            i++;
+                            token = strtok(NULL,":");
+                       }
+                       noticia.tags[i] = NULL;
+                     }
+
+  	<*>#ID:.*        { 
+                       noticia.idNoticia = strdup(strtok(yytext+5," ")); 
+                     }
+
+    <*>#DATE:.*      { 
+                       noticia.date = strdup(yytext+15); 
+                     }
+	
+	<*>[^.\n].*      {
+						if(flag<2){
+							if(flag==0){
+								noticia.category = strdup(yytext);
+							}
+							if(flag==1){
+								noticia.title = strdup(yytext);
+							}	
+						}
+						else if(flag>2){
+							noticia.text[aux] = strdup(yytext);
+							aux++;
+						}
+						flag++;
+				     }
+
+    <*>\n\n\n\n\n\n.*    {	
+    						noticia.countText = aux;
+				     		flag = 0;
+				     		aux = 0;
+				     	 }
+
+ 	<*>.|\n              {;}
+
+}
+
+%%
+
+int main(int argc, char* argv[]){
+    if(argc>1){
+        indiceTags = fopen("Indice-Tags.html","w");
+        jornal = fopen("Indice-Jornal.html","w");
+        tags = fopen("Tags.html","w");
+        htmlInit(jornal,"jornal");
+        htmlInit(indiceTags,"tags");
+        initTags();
+        idsNoticias = (char**) calloc(10000,sizeof(char**));
+
+        yyin = fopen(argv[1], "r");
+
+        yylex();  
+		
+	    printTags();
+		
+        htmlFinit(jornal,"jornal");
+
+        printIndiceTags();
+
+        htmlFinit(indiceTags,"tags");
+
+        fclose(yyin); 
+        fclose(jornal);
+        fclose(tags);
+        fclose(indiceTags);
+    } 
+    else { 
+        return -1; 
+    }
+    return 1;
+}

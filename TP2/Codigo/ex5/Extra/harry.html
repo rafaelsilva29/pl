@@ -1,0 +1,1566 @@
+<html lang='pt-PT'>
+<body>
+<h1>Harry</h1>
+<div id='piechart'></div>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+<script type='text/javascript'>
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+// Draw the chart and set the chart values
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['Prevision', 'Word possibilities'],
+['ergueu', 1]
+,
+
+['acenou', 1]
+,
+
+['Wood', 1]
+,
+
+['recebeu', 1]
+,
+
+['apontava', 2]
+,
+
+['escorregou', 2]
+,
+
+['Fizeste', 1]
+,
+
+['conseguia', 2]
+,
+
+['desejaria', 1]
+,
+
+['dando', 1]
+,
+
+['Acham', 1]
+,
+
+['Precisamos', 1]
+,
+
+['avistou', 3]
+,
+
+['soltar', 1]
+,
+
+['adorou', 1]
+,
+
+['Porque', 3]
+,
+
+['calculou', 2]
+,
+
+['conseguiu', 1]
+,
+
+['porque', 2]
+,
+
+['Quer_dizer', 1]
+,
+
+['Acordaram', 1]
+,
+
+['deixando', 1]
+,
+
+['tentou', 5]
+,
+
+['apertou', 1]
+,
+
+['Justin', 1]
+,
+
+['Seria', 1]
+,
+
+['Quem', 1]
+,
+
+['que', 31]
+,
+
+['tinham', 2]
+,
+
+['A', 6]
+,
+
+['Tinhas', 1]
+,
+
+['assombrado', 1]
+,
+
+['E', 5]
+,
+
+['passou', 4]
+,
+
+['estivera', 1]
+,
+
+['de', 11]
+,
+
+['Dumbledore', 1]
+,
+
+['cautelosamente', 1]
+,
+
+['deitou', 1]
+,
+
+['O', 15]
+,
+
+['estou', 1]
+,
+
+['surpreendido', 1]
+,
+
+['De', 1]
+,
+
+['Ernie', 1]
+,
+
+['esperou', 3]
+,
+
+['tu', 1]
+,
+
+['tirou', 5]
+,
+
+['respirando', 2]
+,
+
+['afastou', 4]
+,
+
+['Tu', 3]
+,
+
+['a', 24]
+,
+
+['passava', 1]
+,
+
+['lentamente', 2]
+,
+
+['e', 98]
+,
+
+['vestiu', 1]
+,
+
+['Nenhum', 1]
+,
+
+['bebeu', 1]
+,
+
+['fechava', 1]
+,
+
+['aumentou', 1]
+,
+
+['avançou', 4]
+,
+
+['o', 9]
+,
+
+['dirigiu', 1]
+,
+
+['Gostava', 2]
+,
+
+['Olá', 2]
+,
+
+['Estou', 1]
+,
+
+['aprendeu', 1]
+,
+
+['quisesse', 1]
+,
+
+['orando', 1]
+,
+
+['coçou', 1]
+,
+
+['fartou', 1]
+,
+
+['afundou', 1]
+,
+
+['Acho', 2]
+,
+
+['apesar_de', 1]
+,
+
+['Mas', 5]
+,
+
+['Meu', 1]
+,
+
+['regressara', 2]
+,
+
+['arrastava', 1]
+,
+
+['começava', 1]
+,
+
+['recuou', 4]
+,
+
+['Tenho', 2]
+,
+
+['alguma', 2]
+,
+
+['mesmo_assim', 1]
+,
+
+['procurou', 1]
+,
+
+['sobrevivera', 1]
+,
+
+['acordou', 2]
+,
+
+['nunca', 9]
+,
+
+['chegando', 1]
+,
+
+['ainda', 3]
+,
+
+['foi', 10]
+,
+
+['Estás', 3]
+,
+
+['teve', 7]
+,
+
+['temos', 1]
+,
+
+['há', 1]
+,
+
+['pôde', 6]
+,
+
+['Sentaram', 1]
+,
+
+['Aprendeste', 1]
+,
+
+['atingira', 1]
+,
+
+['partilhavam', 1]
+,
+
+['Passa', 1]
+,
+
+['caminhou', 1]
+,
+
+['Preso', 1]
+,
+
+['pegou', 5]
+,
+
+['arrancou', 1]
+,
+
+['triunfante', 1]
+,
+
+['Basta_Mcmillan', 1]
+,
+
+['olhou', 41]
+,
+
+['encostando', 1]
+,
+
+['compôs', 1]
+,
+
+['conseguisse', 1]
+,
+
+['Ela', 3]
+,
+
+['Hedwig', 1]
+,
+
+['Ele', 6]
+,
+
+['Hei', 1]
+,
+
+['escutou', 1]
+,
+
+['varinha', 1]
+,
+
+['limpou', 2]
+,
+
+['percebeu', 4]
+,
+
+['Fred', 3]
+,
+
+['Dá', 1]
+,
+
+['divertira', 1]
+,
+
+['recuando', 1]
+,
+
+['sem', 10]
+,
+
+['tentando', 4]
+,
+
+['apontou', 3]
+,
+
+['Ouve', 1]
+,
+
+['achava', 1]
+,
+
+['calmamente', 1]
+,
+
+['trepava', 1]
+,
+
+['desequilibrou', 1]
+,
+
+['agarrando', 3]
+,
+
+['aflito', 3]
+,
+
+['também', 2]
+,
+
+['levantou', 5]
+,
+
+['esqueci', 1]
+,
+
+['Houve', 1]
+,
+
+['quem', 1]
+,
+
+['estava', 14]
+,
+
+['Algures', 1]
+,
+
+['Talvez', 1]
+,
+
+['Essa', 1]
+,
+
+['enfiando', 1]
+,
+
+['quis', 1]
+,
+
+['desesperado', 3]
+,
+
+['Esse', 1]
+,
+
+['observando', 1]
+,
+
+['entrou', 7]
+,
+
+['não', 54]
+,
+
+['pensativo', 1]
+,
+
+['Deixou', 1]
+,
+
+['Logo_que', 1]
+,
+
+['assistira', 1]
+,
+
+['estavam', 1]
+,
+
+['perguntava', 1]
+,
+
+['assegurou', 1]
+,
+
+['Ainda', 1]
+,
+
+['apontaram', 1]
+,
+
+['vendo', 1]
+,
+
+['parecia', 1]
+,
+
+['nervosíssimo', 2]
+,
+
+['através', 1]
+,
+
+['Olhava', 1]
+,
+
+['nervoso', 2]
+,
+
+['ia', 3]
+,
+
+['olhava', 6]
+,
+
+['colocou', 1]
+,
+
+['querido', 1]
+,
+
+['sozinho', 1]
+,
+
+['era', 6]
+,
+
+['um', 4]
+,
+
+['nem', 2]
+,
+
+['pareceu', 1]
+,
+
+['zangado', 3]
+,
+
+['Oliver', 1]
+,
+
+['em', 17]
+,
+
+['Um', 2]
+,
+
+['Ah', 1]
+,
+
+['as', 1]
+,
+
+['Em', 1]
+,
+
+['nem_sequer', 1]
+,
+
+['eu', 4]
+,
+
+['estremeceu', 1]
+,
+
+['retirou', 1]
+,
+
+['já', 3]
+,
+
+['elevou', 1]
+,
+
+['Aposto', 1]
+,
+
+['incrédulo', 1]
+,
+
+['Olhou', 1]
+,
+
+['começou', 4]
+,
+
+['Er', 3]
+,
+
+['As', 2]
+,
+
+['dizia', 1]
+,
+
+['Eu', 5]
+,
+
+['mudando', 1]
+,
+
+['endireitou', 1]
+,
+
+['cuja', 2]
+,
+
+['interrompeu', 1]
+,
+
+['dizer', 1]
+,
+
+['apressou', 1]
+,
+
+['apanhara', 1]
+,
+
+['Por', 3]
+,
+
+['mostrou', 2]
+,
+
+['uma', 2]
+,
+
+['claro', 1]
+,
+
+['disparando', 1]
+,
+
+['gritou', 3]
+,
+
+['baixou', 6]
+,
+
+['um_pouco', 1]
+,
+
+['inclinou', 1]
+,
+
+['sentou', 7]
+,
+
+['seguiu', 2]
+,
+
+['deslocando', 1]
+,
+
+['deixou', 5]
+,
+
+['estiver', 1]
+,
+
+['iria', 1]
+,
+
+['tocou', 2]
+,
+
+['arrastando', 2]
+,
+
+['surgira', 1]
+,
+
+['menos', 1]
+,
+
+['feliz', 2]
+,
+
+['eram', 1]
+,
+
+['lavou', 1]
+,
+
+['levou', 1]
+,
+
+['com', 21]
+,
+
+['pudesse', 2]
+,
+
+['estivessem', 1]
+,
+
+['baixando', 1]
+,
+
+['quase', 8]
+,
+
+['calculava', 1]
+,
+
+['Que', 1]
+,
+
+['acho', 2]
+,
+
+['brilhava', 1]
+,
+
+['balançou', 1]
+,
+
+['perguntou', 4]
+,
+
+['cheio', 3]
+,
+
+['tangiam', 1]
+,
+
+['inquieto', 1]
+,
+
+['Pelo', 1]
+,
+
+['Eis', 1]
+,
+
+['educadamente', 1]
+,
+
+['quando', 6]
+,
+
+['caiu', 5]
+,
+
+['vou', 1]
+,
+
+['pôs', 9]
+,
+
+['repetia', 1]
+,
+
+['esse', 1]
+,
+
+['achou', 3]
+,
+
+['Harry', 17]
+,
+
+['fazendo', 2]
+,
+
+['matutava', 1]
+,
+
+['seguiram', 1]
+,
+
+['isso', 2]
+,
+
+['forçando', 1]
+,
+
+['Soubeste', 1]
+,
+
+['Cabe', 1]
+,
+
+['tomado', 1]
+,
+
+['Vamos', 1]
+,
+
+['Conheço', 1]
+,
+
+['desviou', 1]
+,
+
+['Aqui', 2]
+,
+
+['Então', 1]
+,
+
+['deu', 25]
+,
+
+['Ginny', 1]
+,
+
+['Acabas', 1]
+,
+
+['esticando', 1]
+,
+
+['dez', 1]
+,
+
+['quero', 1]
+,
+
+['rapidamente', 9]
+,
+
+['contou', 4]
+,
+
+['Assim', 1]
+,
+
+['soltou', 2]
+,
+
+['encolheu', 1]
+,
+
+['escreveu', 1]
+,
+
+['sugeriu', 1]
+,
+
+['Ron', 24]
+,
+
+['pensou', 7]
+,
+
+['baixinho', 2]
+,
+
+['apercebeu', 2]
+,
+
+['Havia', 1]
+,
+
+['começaram', 1]
+,
+
+['deitando', 1]
+,
+
+['vira', 2]
+,
+
+['borrando', 1]
+,
+
+['alisou', 1]
+,
+
+['preveniu', 1]
+,
+
+['conseguindo', 1]
+,
+
+['pondo', 2]
+,
+
+['teria', 2]
+,
+
+['imaginava', 1]
+,
+
+['tremia', 1]
+,
+
+['imaginara', 1]
+,
+
+['apurou', 1]
+,
+
+['bateu', 2]
+,
+
+['coçando', 1]
+,
+
+['Quase', 1]
+,
+
+['preparou', 1]
+,
+
+['sair', 1]
+,
+
+['empurrou', 1]
+,
+
+['saiu', 4]
+,
+
+['aproximou', 4]
+,
+
+['parou', 2]
+,
+
+['sentando', 1]
+,
+
+['espreitou', 1]
+,
+
+['só', 9]
+,
+
+['gostou', 2]
+,
+
+['batendo', 1]
+,
+
+['esquecera', 1]
+,
+
+['chegou', 2]
+,
+
+['deram', 1]
+,
+
+['perdendo', 1]
+,
+
+['esteja', 1]
+,
+
+['sabia', 8]
+,
+
+['observava', 1]
+,
+
+['Até', 1]
+,
+
+['Sai', 1]
+,
+
+['enrolando', 1]
+,
+
+['Sim', 2]
+,
+
+['separou', 1]
+,
+
+['reuniu', 1]
+,
+
+['esgueirou', 1]
+,
+
+['como', 3]
+,
+
+['exactamente', 1]
+,
+
+['perdera', 2]
+,
+
+['como_se', 1]
+,
+
+['Retirara', 1]
+,
+
+['voltasse', 2]
+,
+
+['continuando', 1]
+,
+
+['apressadamente', 1]
+,
+
+['Para', 1]
+,
+
+['anima', 1]
+,
+
+['lançou', 3]
+,
+
+['depois', 2]
+,
+
+['mais', 3]
+,
+
+['Nessa_altura', 1]
+,
+
+['insistiu', 1]
+,
+
+['confrontara', 1]
+,
+
+['fatigado', 1]
+,
+
+['entredentes', 1]
+,
+
+['tivera', 2]
+,
+
+['agarrou', 3]
+,
+
+['desejava', 1]
+,
+
+['olhando', 7]
+,
+
+['lembrar', 1]
+,
+
+['riu', 1]
+,
+
+['levantando', 1]
+,
+
+['Quero', 1]
+,
+
+['entra', 1]
+,
+
+['ficou', 13]
+,
+
+['inexpressivo', 1]
+,
+
+['aborrecido', 1]
+,
+
+['procurando', 1]
+,
+
+['fez', 7]
+,
+
+['espantado', 1]
+,
+
+['tivesse', 2]
+,
+
+['terminou', 1]
+,
+
+['mostrando', 1]
+,
+
+['automaticamente', 1]
+,
+
+['mudou', 1]
+,
+
+['Era', 1]
+,
+
+['irritado', 1]
+,
+
+['afundando', 1]
+,
+
+['olha', 1]
+,
+
+['Já', 1]
+,
+
+['Eles', 1]
+,
+
+['Bem', 2]
+,
+
+['ardia', 1]
+,
+
+['apontando', 2]
+,
+
+['distraidamente', 1]
+,
+
+['dava', 1]
+,
+
+['chapinhava', 1]
+,
+
+['desceu', 2]
+,
+
+['Falava', 1]
+,
+
+['mal', 1]
+,
+
+['totalmente', 1]
+,
+
+['Dobby', 1]
+,
+
+['piscou', 1]
+,
+
+['mas', 5]
+,
+
+['arranjei', 1]
+,
+
+['finalmente', 1]
+,
+
+['Começava', 1]
+,
+
+['saltavam', 1]
+,
+
+['Uma', 2]
+,
+
+['detestou', 1]
+,
+
+['agradecido', 1]
+,
+
+['Dudley', 1]
+,
+
+['assim_como', 1]
+,
+
+['disse', 26]
+,
+
+['aliviado', 1]
+,
+
+['esboçou', 1]
+,
+
+['professor', 1]
+,
+
+['poderia', 1]
+,
+
+['escapou', 1]
+,
+
+['Aquela', 1]
+,
+
+['abriu', 4]
+,
+
+['espremendo', 1]
+,
+
+['Deixem', 1]
+,
+
+['deslizou', 1]
+,
+
+['reconheceu', 4]
+,
+
+['melhor', 1]
+,
+
+['pousou', 1]
+,
+
+['interrogou', 1]
+,
+
+['Voltou', 1]
+,
+
+['guardou', 2]
+,
+
+['voltou', 14]
+,
+
+['observa', 1]
+,
+
+['pessoalmente', 1]
+,
+
+['parado', 1]
+,
+
+['piscando', 1]
+,
+
+['se', 9]
+,
+
+['sangue', 1]
+,
+
+['subia', 1]
+,
+
+['furioso', 4]
+,
+
+['oh', 2]
+,
+
+['Neville', 1]
+,
+
+['Recuaram', 1]
+,
+
+['balbuciando', 1]
+,
+
+['Se', 2]
+,
+
+['Hermione', 1]
+,
+
+['receou', 1]
+,
+
+['franzindo', 1]
+,
+
+['boa', 1]
+,
+
+['aqui', 1]
+,
+
+['anda', 1]
+,
+
+['atrás', 2]
+,
+
+['os', 3]
+,
+
+['ou', 1]
+,
+
+['folheou', 1]
+,
+
+['subiu', 2]
+,
+
+['Os', 1]
+,
+
+['reparou', 6]
+,
+
+['por_pouco', 1]
+,
+
+['para', 4]
+,
+
+['Coradíssimo', 1]
+,
+
+['verdadeiramente', 1]
+,
+
+['Lockhart', 3]
+,
+
+['saltou', 1]
+,
+
+['Parecia', 2]
+,
+
+['esticou', 2]
+,
+
+['aprendera', 1]
+,
+
+['empurrando', 1]
+,
+
+['lembrava', 1]
+,
+
+['Deve', 1]
+,
+
+['Mesmo', 1]
+,
+
+['muito', 2]
+,
+
+['alargando', 1]
+,
+
+['manteve', 1]
+,
+
+['sentia', 6]
+,
+
+['parece', 1]
+,
+
+['compreendeu', 2]
+,
+
+['lançando', 2]
+,
+
+['mostrar', 1]
+,
+
+['Hagrid', 1]
+,
+
+['sentir', 2]
+,
+
+['Riddle', 1]
+,
+
+['sentiu', 13]
+,
+
+['sorria', 1]
+,
+
+['transformou', 1]
+,
+
+['saibas', 1]
+,
+
+['lhe', 2]
+,
+
+['ganhou', 1]
+,
+
+['fechando', 1]
+,
+
+['forçou', 1]
+,
+
+['enquanto', 14]
+,
+
+['está', 2]
+,
+
+['Também', 1]
+,
+
+['falou', 1]
+,
+
+['seis', 1]
+,
+
+['conhecia', 2]
+,
+
+['seria', 1]
+,
+
+['tristemente', 4]
+,
+
+['sorriu', 1]
+,
+
+['julgou', 1]
+,
+
+['levar', 1]
+,
+
+['precipitou', 1]
+,
+
+['até', 1]
+,
+
+['fora', 5]
+,
+
+['explicou', 1]
+,
+
+['pararam', 1]
+,
+
+['Está', 1]
+,
+
+['coberto', 1]
+,
+
+['corria', 1]
+,
+
+['estaria', 1]
+,
+
+['confuso', 1]
+,
+
+['alguém', 1]
+,
+
+['ouvia', 2]
+,
+
+['desejou', 3]
+,
+
+['tomando', 1]
+,
+
+['enraivecido', 1]
+,
+
+['certamente', 1]
+,
+
+['via', 3]
+,
+
+['ajeitando', 1]
+,
+
+['Não', 18]
+,
+
+['correu', 4]
+,
+
+['desapontado', 1]
+,
+
+['vai', 1]
+,
+
+['Lucius_Malfoy', 1]
+,
+
+['ouviu', 8]
+,
+
+['exclamou', 1]
+,
+
+['podia', 3]
+,
+
+['chamou', 1]
+,
+
+['voltando', 1]
+,
+
+['vislumbrou', 1]
+,
+
+['despediu', 1]
+,
+
+['escapara', 1]
+,
+
+['viu', 21]
+,
+
+['pensava', 1]
+,
+
+['herdara', 1]
+,
+
+['hesitou', 3]
+,
+
+['sido', 1]
+,
+
+['pisando', 1]
+,
+
+['desesperadamente', 1]
+,
+
+['tenha', 1]
+,
+
+['tinha', 18]
+,
+
+['por', 8]
+,
+
+['estivesse', 1]
+,
+
+['tudo', 1]
+]);
+// Optional; add a title and set the width and height of the chart
+var options = {'title':'Palavra seguinte: e', 'width':880, 'height':640};
+// Display the chart inside the <div> element with id='piechart'
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+#I2 nome Ricardo apelido Pereira%2
+Existem 2 pessoas com este nome
+#I2 nasceu em 1975
+#I2 morreu cerca de 2089
+#I2 FOTO foto.jpg
+#I2 HIST hist.tex
+#I2 casou em 2001 com #aut1
+#aut1 nome Ana
+#aut1 id 1
+#I2 tem-como-pai #aut2
+#aut2 nome Antonio
+#aut2 id 3
+#I2 tem-como-mae #aut3
+#aut3 nome Isabel
+#aut3 id 4
+#I66 nome Mario apelido Rodrigues
+#I66 nasceu em 1992
+#I66 morreu em 2102
+#I66 FOTO fotoCV.jpg
+#I66 HIST historia.tex
+#I66 casou em 2014 com #aut1
+#aut1 nome Carla
+#aut1 id 9
+#I66 tem-como-pai #aut2
+#aut2 nome Joao
+#aut2 id 10
+#I66 filho(a) #aut3
+#aut3 nome Bruno
+#aut3 id 13
+#I66 tem-como-mae #aut4
+#aut4 nome Ana
+#aut4 id 22
+#I66 mae-da-mae #aut5
+#aut5 nome Rita
+#aut5 id 1
+#aut5 
+#I66 morreu em 1933
+#I66 pai-do-pai #aut6
+#aut6 nome Rafael
+#aut6 id 90

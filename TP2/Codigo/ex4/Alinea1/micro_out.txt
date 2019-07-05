@@ -1,0 +1,4 @@
+FileName: Files/micro-Cetempublico01.txt
+Extratos (<ext>): 1295
+Paragrafos (<p>): 3029
+Frases (<s>): 6701
