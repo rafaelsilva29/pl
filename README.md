@@ -2,7 +2,7 @@
 
 Processamento de Linguagens - MIEINF
 
-Trabalho Prático da Unidade Curricular Sistemas de Representação de Conhecimento e Raciocionio
+Trabalho Prático da Unidade Curricular Processamento de Linguagens
 
 Mestrado Integrado em Engenharia Informática
 
